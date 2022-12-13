@@ -1,5 +1,7 @@
 import '../styles/globals.css';
 import * as NextImage from 'next/image';
+import { RouterContext } from 'next/dist/shared/lib/router-context';
+
 
 const BREAKPOINTS_INT = {
   xs: 375,
@@ -41,4 +43,7 @@ export const parameters = {
     },
   },
   viewport: { viewports: customViewports },
+  nextRouter: {
+    Provider: RouterContext.Provider,
+  },
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export interface MenuProps {
     loggedIn: boolean;
@@ -21,15 +22,20 @@ export const Menu: React.FC<MenuProps> = ({
             <button 
                 onClick={onButtonClick}
             >
-                <div className="rounded-full w-10 h-10 bg-gray-500"></div>
+                <Image 
+                        src="/assets/img/fast-toon-account.svg" 
+                        alt="Icon compte fast toon"
+                        width={41}
+                        height={44}
+                />
             </button>
             {
                 loggedIn == true ? (
-                    <ul className="hidden absolute" id="dropdown">
-                        <li>
+                    <ul className="hidden absolute top- bg-gray-50 p-3" id="dropdown">
+                        <li className="w-max">
                             <Link href="/account">Mon compte</Link>
                         </li>
-                        <li>
+                        <li className="w-max">
                             <Link href="/logout">Se déconnecter</Link>
                         </li>
                     </ul>
