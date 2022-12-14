@@ -17,7 +17,7 @@ export const PointBadge: React.FC<PointBadgeProps> = ({
     points,
 }) => {
     return (
-        <div className="text-center">
+        <div className="flex flex-col items-center">
             <div className="rounded-full overflow-hidden">
                 <Image
                     src={src}

@@ -2,7 +2,7 @@ import React from 'react'
 import { 
     Header,
     Footer,
-} from './index'
+} from '../index'
 
 export interface LayoutProps {
     children: React.ReactElement

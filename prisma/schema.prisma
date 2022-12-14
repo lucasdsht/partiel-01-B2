@@ -15,12 +15,18 @@ model Customer {
   firstName String
   lastName  String
   email     String
-  avatar    String
+  birthDate String
 }
 
 model Meal {
   id          String @id @default(cuid())
   name        String
   description String
-  prince      Int
+  price      Int
+  imgSrc String
+  imgAlt String
+  imgWidth Int
+  imgHeight Int
+  urlName String
+  category String
 }

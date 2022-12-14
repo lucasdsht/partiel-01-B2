@@ -5,4 +5,5 @@ export * from './Menu/Menu'
 export * from './Cards/Cards'
 export * from './PointBadge/PointBadge';
 export * from './PointCount/PointCount';
-export * from './layout'
+export * from './layout/CardsLayout';
+export * from './layout/Layout'

@@ -24,7 +24,7 @@ export const Cards: React.FC<CardsProps> = ({
     return (
         <Link
             href={`/products/${productUrlName}`}
-            className='w-fit'
+            className='w-fit flex flex-col items-center'
         >
             <div className="transition ease-linear delay-200 rounded-3xl mb-4 w-fit overflow-hidden shadow-lg shadow-black/40 origin-center hover:scale-110">
                 <Image
@@ -39,7 +39,7 @@ export const Cards: React.FC<CardsProps> = ({
                     <h3 className="font-accent text-primary text-2xl w-fit">En savoir plus</h3>
                 ) 
                 :(
-                    <p className="text-center">{title}</p>
+                    <p className="text-center w-fit">{title}</p>
                 )
             }
             
