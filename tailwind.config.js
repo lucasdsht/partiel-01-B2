@@ -6,8 +6,12 @@ module.exports = {
   // Ensure these match with .storybook/preview.js
   theme: {
     extend: {
+      boxShadow: {
+        t2xl:'0 -25px 50px -12px rgb(0 0 0 / 0.25)',
+      },
       colors: {
         primary: '#F50101',
+        darkPrimary: '#e60000',
         lightGray: '#EAEAE4',
         darkGray: '#212121',
       },

@@ -18,7 +18,7 @@ export const Footer: React.FC<FooterProps> = () => {
                 </Link>
             </div>
             <nav className="flex items-start gap-48 ">
-                <ul>
+                <ul className="space-y-3">
                     <li>
                         <Link href="/products">La carte</Link>
                     </li>
@@ -32,7 +32,7 @@ export const Footer: React.FC<FooterProps> = () => {
                         <Link href="/cart">Panier</Link>
                     </li>
                 </ul>
-                <ul>
+                <ul className="space-y-3">
                     <li>
                         <Link href="">Instagram</Link>
                     </li>
@@ -40,7 +40,7 @@ export const Footer: React.FC<FooterProps> = () => {
                         <Link href="">Facebook</Link>
                     </li>
                 </ul>
-                <ul>
+                <ul className="space-y-3">
                     <li>
                         <Link href="">Télécharger l’application (google play)</Link>
                     </li>
@@ -48,7 +48,7 @@ export const Footer: React.FC<FooterProps> = () => {
                         <Link href="">Télécharger l’application (Apple store)</Link>
                     </li>
                 </ul>
-                <ul>
+                <ul className="space-y-3">
                     <li>
                         <Link href="">Mentions légales</Link>
                     </li>

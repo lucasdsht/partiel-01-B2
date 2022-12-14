@@ -13,7 +13,9 @@ export const Header: React.FC<HeaderProps> = ({
     loggedIn,
 }) => {
     return (
-        <header className='flex justify-between items-center px-20 py-5 bg-lightGray'>
+        <header 
+            className='flex justify-between items-center px-20 py-5 bg-lightGray shadow-lg shadow-gray-700/40 relative z-20'
+        >
             <div>
                 <Link href="/">
                     <Image 
@@ -35,12 +37,17 @@ export const Header: React.FC<HeaderProps> = ({
                 </ul>
                 <div className='flex items-center gap-8'>
                     <Menu loggedIn={loggedIn}/>
-                    <Link href="/cart" className='font-accent text-xl border border-primary rounded-3xl px-5 py-2'>Panier</Link>
+                    <Link 
+                        href="/cart" 
+                        className='transition ease-linear delay-200 font-accent text-xl border border-primary rounded-3xl px-5 py-2 hover:transition-all hover:bg-primary hover:text-lightGray'
+                    >
+                        Panier
+                    </Link>
                 </div>
-                <button className='flex flex-col gap-1 md:hidden'>
-                    <span className='block w-8 h-1 bg-darkGray'></span>
-                    <span className='block w-8 h-1 bg-darkGray'></span>
-                    <span className='block w-8 h-1 bg-darkGray'></span>
+                <button className='space-y-2 md:hidden cursor-pointer'>
+                    <span className='block w-8 h-0.5 bg-darkGray'></span>
+                    <span className='block w-8 h-0.5 bg-darkGray'></span>
+                    <span className='block w-8 h-0.5 bg-darkGray'></span>
                 </button>
             </nav>
         </header>

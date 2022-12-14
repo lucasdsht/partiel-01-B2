@@ -15,6 +15,7 @@ export const Menu: React.FC<MenuProps> = ({
             return null
         }
         menu.classList.toggle("hidden")
+        menu.classList.toggle("flex")
     }
 
     return (
@@ -31,7 +32,7 @@ export const Menu: React.FC<MenuProps> = ({
             </button>
             {
                 loggedIn == true ? (
-                    <ul className="hidden absolute top- bg-gray-50 p-3" id="dropdown">
+                    <ul className="hidden flex-col gap-2 absolute bg-gray-50 p-3 rounded-md shadow-gray-400 shadow-sm" id="dropdown">
                         <li className="w-max">
                             <Link href="/account">Mon compte</Link>
                         </li>
@@ -40,8 +41,8 @@ export const Menu: React.FC<MenuProps> = ({
                         </li>
                     </ul>
                 ) : (
-                    <ul className="hidden absolute" id="dropdown">
-                    <li>
+                    <ul className="hidden absolute bg-gray-50 p-3 rounded-md shadow-gray-400 shadow-sm" id="dropdown">
+                    <li className="w-max">
                         <Link href="/login">Se connecter</Link>
                     </li>
                 </ul>

@@ -11,7 +11,10 @@ import {
 
 export default {
     title: 'Components/Menu',
-    component: Menu
+    component: Menu,
+    parameters: {
+        layout: 'centered'
+    }
 } as ComponentMeta<typeof Menu>
 
 const Template: ComponentStory<typeof Menu> = (args) => <Menu {...args}/>

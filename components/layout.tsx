@@ -14,7 +14,7 @@ export const Layout: React.FC<LayoutProps> = ({
     return (
         <>
             <Header loggedIn={true}/>
-            <main>{children}</main>
+            <main className='font-body'>{children}</main>
             <Footer/>
         </>
     )
